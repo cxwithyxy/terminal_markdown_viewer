@@ -16,8 +16,8 @@ from setuptools import setup, find_packages
 
 version = "1.7.4"
 
-with open(os.path.join(os.path.dirname(__file__), "README.md")) as fd:
-    md = fd.read(encoding="utf8")
+with open(os.path.join(os.path.dirname(__file__), "README.md"), encoding="utf8") as fd:
+    md = fd.read()
 
 # images hack for pypi:
 gh='https://raw.githubusercontent.com/axiros/terminal_markdown_viewer/master'
