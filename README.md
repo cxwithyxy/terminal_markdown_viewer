@@ -61,17 +61,17 @@ from
 	# Make Py2 >>> Py3:
 	import os, sys; reload(sys); sys.setdefaultencoding('utf-8')
 	# no? see http://stackoverflow.com/a/29832646/4583360 ...
-
+	
 	# code analysis for hilite:
 	try:
 	    from pygments import lex, token
 	    from pygments.lexers import get_lexer_by_name, guess_lexer
 	```
-
+	
 	| Tables | Fmt |
 	| -- | -- |
 	| !!! hint: wrapped | 0.1 **strong** |
-
+	
 	!!! note: title
 	    this is a Note
 
@@ -163,7 +163,13 @@ Further a 256 color terminal (for now best with dark background) and font suppor
 
 > For light terms you'd just need to revert the 5 colors from the themes, since they are sorted by luminocity.
 
-I did not test anything on windows.
+~~I did not test anything on windows.~~
+
+About windows
+
+* cmd **NO** work
+* powershell **NO** work
+* [Cmder](https://cmder.net/) **WORKS** !
 
 ### Manual Install: Setup
 
@@ -175,7 +181,7 @@ Distribution via setuptools. If setuptools is not installed, run:
 Use the setup.py provided inside, I.e. run:
 
 	sudo ./setup.py install
-    (or ./setup.py install --user to install only for the current user)
+	(or ./setup.py install --user to install only for the current user)
 
 
 
