@@ -1304,7 +1304,7 @@ def main(
             if filename == "-":
                 md = sys.stdin.read()
             else:
-                with open(filename) as f:
+                with open(filename, encoding="utf8") as f:
                     md = f.read()
 
     # style rolers requested?
